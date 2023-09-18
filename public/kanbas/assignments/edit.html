@@ -1,0 +1,186 @@
+<html>
+
+<body>
+    <table width="100%">
+        <td valign="top">
+            <ul>
+                <li><a href="../account/profile/index.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="../courses/home/home.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+
+        <td valign="top">
+            <li><a href="../courses/home/home.html">Home</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li><a href="index.html">Assignments</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="../grades/grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="#">Settings</a></li>
+        </td>
+        <td valign="top">
+            <div>
+                <select id="assignment-dropdown">
+                    <option value="Edit">Edit</option>
+                    <option selected value="Speed Grader">Speed Grader</option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                    <option value="MoveTo">Move To...</option>
+                    <option value="SendTo">Send To...</option>
+                    <option value="CopyTo">Copy To...</option>
+                    <option value="ShareToCommons">Share To Commons</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <hr class="solid">
+            </div>
+            <div>
+                <p>Assignment Name</p>
+                <input type="text" value="A1 - ENV + HTML">
+            </div>
+            <div>
+                <br />
+                <textarea cols="30" rows="2">This is the assignment description.</textarea>
+            </div>
+            <br />
+            <div>
+                Points
+                <br />
+                <input type="number" value="100">
+            </div>
+            <br />
+            <div>
+                Assignment Group
+                <br />
+                <select id="assignment-group-dropdown">
+                    <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+                    <option value="QUIZZES">QUIZZES</option>
+                    <option value="EXAMS">EXAMS</option>
+                    <option value="PROJECT">PROJECT</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                Display Grade as
+                <br />
+                <select id="display-grade-as-dropdown">
+                    <option value="Percentage">Percentage</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                Submission Type
+                <select id="submission-type-dropdown">
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                Online Entry Options
+                <br />
+                <div>
+                    <input id="text-entry-option" type="checkbox">
+                    <label for="text-entry-option">Text Entry</label>
+                </div>
+                <div>
+                    <input id="website-url-option" type="checkbox">
+                    <label for="website-url-option">Website URL</label>
+                </div>
+                <div>
+                    <input id="media-recordings-option" type="checkbox">
+                    <label for="media-recordings-option">Media Recordings</label>
+                </div>
+                <div>
+                    <input id="student-annotation-option" type="checkbox">
+                    <label for="student-annotation-option">Student Annotation</label>
+                </div>
+                <div>
+                    <input id="file-uploads-option" type="checkbox">
+                    <label for="file-uploads-option">File Uploads</label>
+                </div>
+            </div>
+            <br />
+            <div>
+                Submission Attempts
+                <br />
+                <select id="submission-attempts-option">
+                    <option selected value="Unlimited">Unlimited</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                Plagiarism Review
+                <br />
+                <select id="plagiarism-review-option">
+                    <option selected value="None">None</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                Group Assignment
+                <br />
+                <div>
+                    <input id="group-assignment-option" type="checkbox">
+                    <label for="group-assignment-option">This is a group assignment</label>
+                </div>
+            </div>
+            <br />
+            <div>
+                Peer Reviews
+                <br />
+                <div>
+                    <input id="peer-reviews-option" type="checkbox">
+                    <label for="peer-reviews-option">Require Peer Reviews</label>
+                </div>
+            </div>
+            <br />
+            <div>
+                Assign to
+                <br />
+                <input type="text" value="Everyone">
+            </div>
+            <br />
+            <div>
+                Due
+                <br />
+                <input type="date" value="2023-01-01">
+            </div>
+            <br />
+            <div>
+                Available from
+                <br />
+                <input type="date" value="2023-01-01">
+            </div>
+            <br />
+            <div>
+                Until
+                <br />
+                <input type="date" value="2023-01-01">
+            </div>
+            <br />
+            <button>Cancel</button>
+            <button>Save</button>
+        </td>
+    </table>
+</body>
+
+</html>
