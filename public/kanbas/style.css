@@ -1,12 +1,131 @@
+
 .sidebar {
-    width: 10px;
     height: 100vh;
     background-color: black;
     text-align: center;
 }
 
-.sidebar a {
-    color: white;
-    text-decoration: none;
+.sidebar-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar-list li {
+    margin-bottom: 10px;
+    padding: 5px;
     list-style: none;
+}
+
+.sidebar-list-item a {
+    color: white;
+    background-color: black;
+}
+
+.sidebar-list-item a i {
+    color: red;
+    background-color: black;
+}
+
+.sidebar-list-item:hover {
+    color: white;
+    background-color: black;
+}
+
+.sidebar-button-active a:hover {
+    color: black;
+    background-color: white;
+}
+
+.sidebar-button-active a {
+    color: black;
+    background-color: white;
+}
+
+.sidebar-button-width {
+    width: 100%;
+}
+
+.top-nav i{
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.nav-item a {
+    color: red;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.nav-item-active {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.nav-item-active a {
+    color: black;
+
+    text-decoration: none;
+}
+
+.profile-information div {
+    margin-top: 30px;
+}
+
+.profile-information div a {
+    color: red;
+}
+
+.profile-picture {
+    font-size: 120px;
+}
+
+.url-link {
+    color: red;
+    text-decoration: none;
+}
+
+.btn-profile {
+    background-color: lightgray !important; 
+    color: black !important;
+}
+
+.btn-profile:hover {
+    background-color: blue;
+    color: blue;
+}
+
+.dropdown-full-width {
+    width: 300px;
+}
+
+.profile-label-style {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.hor-line {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.links-info {
+    text-align: center;
+}
+
+.top-buttons-course {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10;
 }

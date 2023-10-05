@@ -11,87 +11,156 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col sidebar">
-                <ul>
+            <div class="col-1 p-0 m-0 sidebar">
+                <ul class="sidebar-list">
                     <li>
-                        <!-- <img src="https://i.pinimg.com/originals/08/bd/47/08bd47b365a7ad4ed868352014ecbd48.png"> -->
+                        <a href="../../courses/home/home.html">
+                            <img src="https://canqin.tech/pic/NEU-logo.png" alt="" width="75">
+                        </a>
                     </li>
-                    <li>
-                        <i class=""></i>
-                        <a href="index.html">Account</a>
+                    <li class="sidebar-button-active">
+                        <a href="index.html" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-user fa-2x"></i>
+                            </div>
+                            Account
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Dashboard</a>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-gauge-high fa-2x sidebar-logo"></i>
+                            </div>
+                            Dashboard
+                        </a>
                     </li>
-                    <li>
-                        <a href="../../courses/home/home.html">Courses</a>
+                    <li class="sidebar-list-item">
+                        <a href="../../courses/home/home.html" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-book fa-2x"></i>
+                            </div>
+                            Courses
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Calendar</a>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-regular fa-calendar fa-2x"></i>
+                            </div>
+                            Calendar
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Inbox</a>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-inbox fa-2x"></i>
+                            </div>
+                            Inbox
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">History</a>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+                            </div>
+                            History
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Studio</a>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-film fa-2x"></i>
+                            </div>
+                            Studio
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Commons</a>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+                            </div>
+                            Commons
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Help</a>
+                    <li class="sidebar-list-item">
+                        <a href="#" class="btn btn-block sidebar-button-width rounded-0">
+                            <div>
+                                <i class="fa-solid fa-circle-question fa-2x"></i>
+                            </div>
+                            Help
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="col">
-                <li><a href="#">Notifications</a></li>
-                <li><a href="index.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Announcents</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-            </div>
-            <div class="col">
-                Felipe Padilla's Profile
-                <br />
+            <div class="col ms-2 p-0">
+                <span class="top-nav">
+                    <i class="fa-solid fa-bars fa-2x" style="color: red;"></i>
+                    Felipe Padilla's Profile
+                </span>
                 <div>
                     <hr class="solid">
                 </div>
-                <br />
-                <button onclick="window.location.href='edit.html'" style="position: absolute; right: 20;"><img
-                        src="https://cdn-icons-png.flaticon.com/512/20/20469.png" style="width: 12px; height: 12px;">
-                    Edit Profile</button>
-                <div>
-                    <h1>Felipe Padilla</h1>
+                <ul>
+                    <li class="nav-item"><a href="#">Notifications</a></li>
+                    <li class="nav-item-active">
+                        <a href="index.html">
+                            <span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1/1625.png" alt="" width="13px">
+                                Profile
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="#">Files</a></li>
+                    <li class="nav-item"><a href="#">Settings</a></li>
+                    <li class="nav-item"><a href="#">ePortfolios</a></li>
+                    <li class="nav-item"><a href="#">Shared Content</a></li>
+                    <li class="nav-item"><a href="#">The Hub</a></li>
+                    <li class="nav-item"><a href="#">Qwickly Course Tools</a></li>
+                    <li class="nav-item"><a href="#">Global Announcents</a></li>
+                    <li class="nav-item"><a href="#">Discussions</a></li>
+                    <li class="nav-item"><a href="#">Announcements</a></li>
+                    <li class="nav-item"><a href="#">Pages</a></li>
+                    <li class="nav-item"><a href="#">Files</a></li>
+                    <li class="nav-item"><a href="#">Rubrics</a></li>
+                    <li class="nav-item"><a href="#">Outcomes</a></li>
+                    <li class="nav-item"><a href="#">Collaborations</a></li>
+                    <li class="nav-item"><a href="#">Syllabus</a></li>
+                </ul>
+            </div>
+            <div class="col p-0">
+                <hr class="solid hor-line">
+                <i class="fa fa-user profile-picture"></i>
+                <div class="profile-information">
+                    <div>
+                        <h1>Felipe Padilla</h1>
+                    </div>
+                    <div>
+                        <h2>Contact</h2>
+                        No registered services, you can add some on the <a href="#" class="url-link">settings</a> page.
+                    </div>
+                    <br />
+                    <div>
+                        <h2>Biography</h2>
+                        Student, Computer Scientist, and novel writer.
+                    </div>
+                    <br />
+                    <div>
+                        <h2>Links</h2>
+                        <a href="https://www.youtube.com/watch?v=17B1QCWz-Cw" class="youtube-url">
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                                YouTube
+                            </span>
+                        </a>
+                    </div>   
                 </div>
-                <div>
-                    <h2>Contact</h2>
-                    No registered services, you can add some on the <a href="#">settings</a> page.
-                </div>
-                <br />
-                <div>
-                    <h2>Biography</h2>
-                    Student, Computer Scientist, and novel writer.
-                </div>
-                <br />
-                <div>
-                    <h2>Links</h2>
-                    <a href="#">YouTube</a>
-                </div>
+            </div>
+            <div class="col p-0">
+                <hr class="solid hor-line">
+                <a href="edit.html" class="btn btn-profile">
+                    <i class="fa-solid fa-pencil" style="font-size: 12px;"></i>
+                    Edit Profile
+                </a>
             </div>
         </div>
     </div>
