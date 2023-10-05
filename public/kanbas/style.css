@@ -1,6 +1,11 @@
+html,
+body {
+    height: -webkit-fill-available;
+    overflow-x: hidden;
+}
 
 .sidebar {
-    height: 100vh;
+    height: unset;
     background-color: black;
     text-align: center;
 }
@@ -11,7 +16,7 @@
 }
 
 .sidebar-list li {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 5px;
     list-style: none;
 }
@@ -19,6 +24,8 @@
 .sidebar-list-item a {
     color: white;
     background-color: black;
+    font-size: 13px;
+    width: 100%;
 }
 
 .sidebar-list-item a i {
@@ -31,12 +38,13 @@
     background-color: black;
 }
 
-.sidebar-button-active a:hover {
+.sidebar-button-active a {
     color: black;
     background-color: white;
+    font-size: 13px;
 }
 
-.sidebar-button-active a {
+.sidebar-button-active a:hover {
     color: black;
     background-color: white;
 }
@@ -45,7 +53,7 @@
     width: 100%;
 }
 
-.top-nav i{
+.top-nav i {
     margin-right: 10px;
     padding-top: 10px;
 }
@@ -95,8 +103,13 @@
     text-decoration: none;
 }
 
+.url-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
 .btn-profile {
-    background-color: lightgray !important; 
+    background-color: lightgray !important;
     color: black !important;
 }
 
@@ -127,5 +140,62 @@
 .top-buttons-course {
     display: flex;
     justify-content: flex-end;
-    padding: 10;
+    padding-top: 100px;
+}
+
+.top-buttons-course button {
+    margin-right: 5px;
+}
+
+.list-group-item li {
+    border-right: 1px;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-left: 1px;
+}
+
+.list-group-item li a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-group-item li a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+.icon-gray {
+    color: gray;
+    margin-right: 10px;
+}
+
+.icon-green {
+    color: green;
+    margin-right: 10px;
+}
+
+.course-status {
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.course-status-list li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.bold-black-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.lectures li {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.assign-button-group {
+    margin-top: 100px;
 }
