@@ -1,41 +1,69 @@
 import { Link } from "react-router-dom";
-import db from "../Database";
+import axios from "axios";
 import "./index.css";
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
+import * as client from "../Courses/client";
 
 function Dashboard() {
-  const [courses, setCourses] = useState(db.courses);
+  const [courses, setCourses] = useState([]);
+  const URL = "http://localhost:4000/api/courses";
+
   const [course, setCourse] = useState({
     name: "New Course",
     number: "New Number",
     startDate: "2023-09-10",
     endDate: "2023-12-15",
   });
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
+
+  const deleteCourse = async (course) => {
+    const response = await axios.delete(
+      `${URL}/${course._id}`
+    );
+    setCourses(courses.filter(
+      (c) => c._id !== course._id));
   };
 
-  const addNewCourse = () => {
-    setCourses([...courses, { ...course, _id: new Date().getTime() }]);
+
+  const addCourse = async () => {
+    const response = await axios.post(URL, course);
+    setCourses([
+      response.data,
+      ...courses,
+    ]);
+    setCourse({ name: "" });
   };
-  const updateCourse = () => {
-    setCourses(
-      courses.map((c) => {
-        if (c._id === course._id) {
-          return course;
-        } else {
-          return c;
-        }
-      })
-    );
+
+  const updateCourse = async () => {
+    try {
+      const status = await client.updateCourse(course);
+      setCourses(
+        courses.map((c) => {
+          if (c._id === course._id) {
+            return course;
+          } else {
+            return c;
+          }
+        })
+      );
+    } catch (error) {
+      console.log(error);
+    }
   };
+
+  const findAllCourses = async () => {
+    const response = await axios.get(URL);
+    setCourses(response.data);
+  };
+  useEffect(() => {
+    findAllCourses();
+  }, []);
 
   return (
     <div>
       <h1>Dashboard</h1>
       <button onClick={updateCourse}>Update</button>
 
-      <button onClick={addNewCourse}>Add</button>
+      <button onClick={addCourse}>Add</button>
       <h5>Course</h5>
       <input
         value={course.name}

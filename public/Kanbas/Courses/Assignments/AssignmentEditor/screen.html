@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import AssignmentEditor from "./AssignmentEditor.js";
+      const root = document.getElementById("root");
+      console.log(root);
+      root.innerHTML = AssignmentEditor();
+    </script>
+  </body>
+</html>

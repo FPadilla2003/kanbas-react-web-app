@@ -30,7 +30,8 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
   return (
     <div className="wd-kanbas-navigation list-group col-1" style={{}}>
-      <img className="wd-kanbas-navigation-icon align-items-center p-2" src="https://canqin.tech/pic/NEU-logo.png" alt=""></img>
+      <img className="wd-kanbas-navigation-icon align-items-center p-2"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png" alt=""></img>
       {links.map((link, index) => (
         <Link
           key={index}
