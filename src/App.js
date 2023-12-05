@@ -6,14 +6,15 @@ import logo from "./logo.svg";
 import { HashRouter } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router";
 import StateManagement from "./Lectures/StateManagement";
+import Project from "./project";
 
 function App() {
   return (
     <HashRouter>
       <div>
         <Routes>
-          <Route path="/" element={<Navigate to="/Labs" />} />
-
+          <Route path="/" element={<Navigate to="project" />} />
+          <Route path="/project/*" element={<Project />} />
           <Route path="/hello" element={<HelloWorld />} />
           <Route path="/Lectures" element={<StateManagement />} />
           <Route path="/Labs/*" element={<Labs />} />
